@@ -22,14 +22,14 @@ fun sockMerchant(n: Int, ar: Array<Int>): Int {
 return pairCounter
 }
 
-fun main(args: Array<String>) {
-    val scan = Scanner(System.`in`)
-
-    val n = scan.nextLine().trim().toInt()
-
-    val ar = scan.nextLine().split(" ").map{ it.trim().toInt() }.toTypedArray()
-
-    val result = sockMerchant(n, ar)
-
-    println(result)
-}
+//fun main(args: Array<String>) {
+//    val scan = Scanner(System.`in`)
+//
+//    val n = scan.nextLine().trim().toInt()
+//
+//    val ar = scan.nextLine().split(" ").map{ it.trim().toInt() }.toTypedArray()
+//
+//    val result = sockMerchant(n, ar)
+//
+//    println(result)
+//}
