@@ -1,8 +1,4 @@
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Day1 {
 
@@ -15,7 +11,7 @@ public class Day1 {
 //
 //        /* Declare second integer, double, and String variables. */
 //        int secondI;
-//        double  secondD;
+//        double secondD;
 //        String secondS;
 //
 //        /* Read and save an integer, double, and String to your variables.*/
@@ -26,11 +22,11 @@ public class Day1 {
 //        secondS = scan.nextLine();
 //
 //        /* Print the sum of both integer variables on a new line. */
-//        System.out.println(i+secondI);
+//        System.out.println(i + secondI);
 //
 //
 //        /* Print the sum of the double variables on a new line. */
-//        System.out.println(d+secondD);
+//        System.out.println(d + secondD);
 //        /* Concatenate and print the String variables on a new line;
 //        	the 's' variable above should be printed first. */
 //        System.out.println(s.concat(secondS));
