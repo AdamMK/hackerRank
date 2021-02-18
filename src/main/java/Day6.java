@@ -1,37 +1,31 @@
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class Day6 {
 
-    public static void printWord(String w) {
+    private static final Scanner scanner = new Scanner(System.in);
 
-        char[] wo = w.toCharArray();
-        
-        for(int i = 0; i < wo.length; i++) {
-            if (i%2 == 0) {
-                System.out.printf("%c", wo[i]);
-            }
+    public static void printWord() {
+
+        char[] word = scanner.next().toCharArray();
+
+        //even
+        for(int i = 0; i < word.length; i+=2) {
+            System.out.print(word[i]);
         }
         System.out.print(" ");
-        for(int i = 0; i < wo.length; i++) {
-            if (i%2 == 1) {
-                System.out.printf("%c", wo[i]);
-            }
+
+        //odd
+        for(int i = 1; i < word.length; i+=2) {
+                System.out.print(word[i]);
         }
     }
-
-
     public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
 
         for(int i = 0; i < n; i++) {
-            String word = scanner.nextLine();
-            printWord(word);
+            printWord();
+            System.out.println();
         }
-
-
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        scanner.close();
     }
 }
