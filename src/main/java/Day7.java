@@ -19,16 +19,23 @@ public class Day7 {
         }
         scanner.close();
 
+        StringBuilder sb = new StringBuilder();
 
-       for(int i = 0; i < arr.length / 2; i++){
-           int temp = arr[i];
-           arr[i] = arr[arr.length - 1 - i];
-           arr[arr.length - 1 - i] = temp;
-       }
-
-        for( int i = 0; i < arr.length; i++) {
-            System.out.printf("%d ", arr[i]);
+        for (int i = arr.length-1; i >= 0; i--){
+            sb.append(arr[i] + " ");
         }
+        System.out.println(sb);
+
+
+//       for(int i = 0; i < arr.length / 2; i++){
+//           int temp = arr[i];
+//           arr[i] = arr[arr.length - 1 - i];
+//           arr[arr.length - 1 - i] = temp;
+//       }
+//
+//        for( int i = 0; i < arr.length; i++) {
+//            System.out.printf("%d ", arr[i]);
+//        }
 
     }
 }
