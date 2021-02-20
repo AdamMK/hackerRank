@@ -22,7 +22,7 @@ class Player implements Comparable {
     public static Comparator<Player> comparator() {
         return Comparator
                 .comparingInt((Player p) -> p.score).reversed()
-                .thenComparing(p -> p.name)
+                .thenComparing(p -> p.name);
     }
 
     @Override
