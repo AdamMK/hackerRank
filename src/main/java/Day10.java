@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Day10 {
@@ -20,9 +19,6 @@ public class Day10 {
 
         //split all the ones by getting rid of 0
         String[] ones = binStr.split("0");
-
-
-        //System.out.println(Arrays.toString(strparts));
 
         //check which collection of ones is the longest
         for(int i = 0; i<ones.length; i++) {
