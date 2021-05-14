@@ -1,12 +1,8 @@
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
@@ -22,10 +18,19 @@ class Result1 {
      */
 
     public static List<Integer> rotLeft(List<Integer> a, int d) {
-        // Write your code here
-    return List.of(1,2);
+        Integer[] newList = new Integer[a.size()];
+        if (d == 0) {
+            return a;
+        } else {
+            for (int i = 0; i < a.size(); i++) {
+                //take the current index + shift and get a reminder of division by size of array
+                //first calculation always takes the last element and then put it in the first index of new array
+                int el = (i + d)% a.size();
+                newList[i] = a.get(el);
+            }
+        }
+        return Arrays.asList(newList);
     }
-
 }
 
 public class ArraysLeftRotation {
