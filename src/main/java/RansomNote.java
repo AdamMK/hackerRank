@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -32,7 +31,7 @@ class Result2 {
 }
 
 public class RansomNote {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         List<String> magazine = new ArrayList(Arrays.asList("aaa", "bb", "eee", "rrr"));
         List<String> note = new ArrayList(Arrays.asList("aaa", "bbb", "eee"));
