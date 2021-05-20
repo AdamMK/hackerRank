@@ -11,6 +11,12 @@ class RansomNoteTest {
     @Test
     void correctWords(){
         List<String> magazine = Arrays.asList("aaa", "bbb", "eee", "rrr");
-//        assertEquals("Yes", Result2.checkMagazine(magzine, List.of("aaa", "bbb")));
+        assertEquals(true , Result2.checkMagazine(magazine, List.of("aaa", "bbb")));
+    }
+
+    @Test
+    void notcorrectWordsss(){
+        List<String> magazine = Arrays.asList("two", "times", "three", "is", "not", "four");
+        assertEquals(false , Result2.checkMagazine(magazine, List.of("two", "times", "two", "is", "four")));
     }
 }

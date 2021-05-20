@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 class Result2 {
@@ -12,31 +13,45 @@ class Result2 {
      *  2. STRING_ARRAY note
      */
 
-    public static void checkMagazine(List<String> magazine, List<String> note) {
-        for(int i = 0; i < note.size();i++){
-            if (magazine.contains(note.get(i))) {
-                magazine.remove(note.get(i));
-                note.remove(i);
-                i = -1;
+    public static boolean checkMagazine(List<String> magazine, List<String> note) {
+        HashMap<String, Integer> magMap = new HashMap<>();
+        for (String word : magazine){
+            magMap.compute(word, (k,v) -> (v == null) ? 1 : v+1);
+        }
+
+        for (String word : note){
+            if(!magMap.containsKey(word) || magMap.get(word) == 0) {
+                return false;
             }
+            magMap.computeIfPresent(word,(k,v) -> v-1);
         }
-        // System.out.println(magazine);
-        // System.out.println(note);
-        if (note.size() == 0){
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
-        }
+        return true;
     }
 }
 
 public class RansomNote {
     public static void main(String[] args) {
 
+        String s1 = "sdasd";
+        String s2 = "ssd";
+        String flag = "NO";
+
+        for(char c : "abcdefghijklmnopqrstuvwxyz".toCharArray()){
+            if(s1.indexOf(c) > -1 && s2.indexOf(c) > -1) {
+                flag = "YES";
+            }
+        }
+
+        System.out.println(flag);
+
+
+
+
+
         List<String> magazine = new ArrayList(Arrays.asList("aaa", "bb", "eee", "rrr"));
         List<String> note = new ArrayList(Arrays.asList("aaa", "bbb", "eee"));
 
-        Result2.checkMagazine(magazine, note);
+        System.out.println(Result2.checkMagazine(magazine, note));
 
     }
 }
