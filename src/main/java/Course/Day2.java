@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Day2 {
 
-    // Complete the solve function below.
+    // Comple
+    // te the solve function below.
     static void solve(double meal_cost, int tip_percent, int tax_percent) {
 
         double mealWithTip = (meal_cost/100)*tip_percent;

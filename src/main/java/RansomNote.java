@@ -32,19 +32,17 @@ class Result2 {
 public class RansomNote {
     public static void main(String[] args) {
 
-        String s1 = "sdasd";
-        String s2 = "ssd";
-        String flag = "NO";
-
-        for(char c : "abcdefghijklmnopqrstuvwxyz".toCharArray()){
-            if(s1.indexOf(c) > -1 && s2.indexOf(c) > -1) {
-                flag = "YES";
-            }
-        }
-
-        System.out.println(flag);
-
-
+//        String s1 = "sdasd";
+//        String s2 = "ssd";
+//        String flag = "NO";
+//
+//        for(char c : "abcdefghijklmnopqrstuvwxyz".toCharArray()){
+//            if(s1.indexOf(c) > -1 && s2.indexOf(c) > -1) {
+//                flag = "YES";
+//            }
+//        }
+//
+//        System.out.println(flag);
 
 
 

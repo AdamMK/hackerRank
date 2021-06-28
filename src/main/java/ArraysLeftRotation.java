@@ -31,6 +31,7 @@ class Result1 {
         }
         return Arrays.asList(newList);
     }
+
 }
 
 public class ArraysLeftRotation {

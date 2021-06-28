@@ -31,4 +31,10 @@ class ArraysLeftRotationTest {
         List<Integer> inputArray = List.of(1,2,3,4,5);
         assertEquals(List.of(5,1,2,3,4), Result1.rotLeft(inputArray, 4));
     }
+
+    @Test
+    void anArrayRotatesThree() {
+        List<Integer> inputArray = List.of(3,8,9,7,6);
+        assertEquals(List.of(9,7,6,3,8), Result1.rotLeft(inputArray, 3));
+    }
 }
