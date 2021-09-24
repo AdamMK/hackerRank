@@ -4,7 +4,7 @@ fun birthdayCakeCandles(candles: Array<Int>): Int {
     }
 fun main(args: Array<String>) {
 
-    val candles = arrayOf(1,3,4,5,5,5,5,5)
+    val candles = arrayOf(1,3,4,5,5,5,5,5,5,5)
 
     val result = birthdayCakeCandles(candles)
 

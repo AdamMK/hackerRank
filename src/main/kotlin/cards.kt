@@ -1,10 +1,3 @@
-//data class Suits(
-//    val sp : String,
-//    val hr: String,
-//    val cl: String,
-//    val dm: String
-//        )
-//
 
 fun cards(sample: Array<Pair<String, Int>>, firstPair: Pair<String, Int>): Int {
 

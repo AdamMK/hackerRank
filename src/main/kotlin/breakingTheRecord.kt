@@ -18,10 +18,10 @@ fun breakingRecords(scores: Array<Int>): Array<Int> {
             firstScore = scores[i]
         }
     }
-    println("$highBreak, $lowBreak")
+    println(arrayOf(highBreak, lowBreak).toList())
     return arrayOf(highBreak, lowBreak)
 }
 
 fun main() {
-    print(breakingRecords(arrayOf(3,4,21,36, 10, 28, 35, 5, 24, 42)));
+    breakingRecords(arrayOf(3,4,21,36, 10, 28, 35, 5, 24, 42, 1))
 }

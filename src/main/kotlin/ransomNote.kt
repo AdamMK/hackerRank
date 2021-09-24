@@ -1,4 +1,3 @@
-import java.util.function.BiFunction
 
 fun checkMagazine(magazine: Array<String>, note: Array<String>): Unit {
 
