@@ -127,13 +127,14 @@ fun merge(left: List<Int>, right: List<Int>): List<Int> {
 }
 
 fun main() {
+    println("--------bubble-----------------------")
     bubbleSort(arrayOf(6,4,1,2,3))
-    println("----------------------------")
+    println("--------selection--------------------")
     selectionSort(arrayOf(6,4,1,2,3))
-    println("----------------------------")
+    println("----------insertion------------------")
     insertionSort(arrayOf(6,4,1,2,3))
-    println("----------------------------")
+    println("-----------quick---------------------")
     println(quickSort(listOf(6,4,1,2,3)))
-    println("----------------------------")
+    println("-----------merge---------------------")
     println(mergeSort(listOf(6,4,1,2,3)))
 }
